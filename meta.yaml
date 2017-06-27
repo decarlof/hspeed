@@ -1,0 +1,29 @@
+package:
+  name: hspeed
+  version: '0.0.1'
+
+source:
+  git_url: https://github.com/decarlof/hspeed.git
+  
+build:
+  number: 0
+
+requirements:
+  build:
+    - python
+    - setuptools
+ 
+  run:
+    - python
+    - numpy    
+    
+test:
+  # Python imports
+  imports:
+    - hspeed
+    - hspeed.util
+
+about:
+  home: http://hspeed.readthedocs.org
+  license: BSD-3
+  summary: 'Add docs to any hspeed.'
